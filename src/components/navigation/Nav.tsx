@@ -4,15 +4,19 @@ import './Nav.scss';
 
 import images from '../../constants/images'
 
-const Nav = () => {
+interface Props{
+  dark?:boolean
+}
+
+const Nav: React.FC<Props>= ({dark}) => {
   return (
     <nav className="nav">
 
       <div className="nav__logo">
-        <img src={images.logoDark} alt="" />
+        <img src={dark ? images.logoLight : images.logoDark} alt="company logo" />
       </div>
 
-      <ul className="nav__links">
+      <ul className={`nav__links ${dark ? 'nav__links-dark' : ''}`}>
         <li className="nav__link">
           OUR COMPANY
         </li>

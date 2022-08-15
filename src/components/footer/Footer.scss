@@ -1,0 +1,30 @@
+@use '../../styles/colors.scss' as *;
+
+
+.footer{
+    padding: 104px 0 72px;
+    background-color: $black;
+
+    .nav{
+        padding: 40px 0;
+    }
+
+    &__info{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: end;
+        padding-top: 30px;
+        border-top:1px solid  rgba($white,0.1);
+        color: rgba($white,0.1);
+       
+    }
+    
+    &__social{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        gap: 16px;
+    }
+}
