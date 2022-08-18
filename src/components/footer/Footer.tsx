@@ -26,11 +26,21 @@ const Footer = () => {
                 </ul>
 
                 <ul className="footer__social">
-                    <li><a href="11"><IconFacebook /></a></li>
-                    <li><a href="22"><IconYoutube /></a></li>
-                    <li><a href="33"><IconTwitter /></a></li>
-                    <li><a href="44"><IconPinterest /></a></li>
-                    <li><a href="55"><IconInstagram /></a></li>
+                    <li>
+                        <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"><IconFacebook /></a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer"><IconYoutube /></a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer"><IconTwitter /></a>
+                    </li>
+                    <li>
+                        <a href="https://www.pinterest.com/" target="_blank" rel="noopener noreferrer"><IconPinterest /></a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"><IconInstagram /></a>
+                    </li>
                 </ul>
             </div>
         </Wrapper>

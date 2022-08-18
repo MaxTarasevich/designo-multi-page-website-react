@@ -17,8 +17,29 @@
         align-items: center;
         gap: 42px;
         @include Nav;
+
+        &-dark{
+            color:$white;
+        }
     }
-    &__links-dark{
-        color:$white;
+
+    &__link{
+        text-decoration: underline $white;
+        transition: text-decoration 0.4s ease-in;
+
+        &-dark{
+            text-decoration: underline $black;
+        }
+
+        &:hover{
+            text-decoration: underline $black;
+        }
+
+        &-dark:hover{
+            text-decoration: underline $white;
+        }
     }
+
+    
+
 }

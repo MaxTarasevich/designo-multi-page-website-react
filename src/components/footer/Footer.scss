@@ -26,5 +26,13 @@
         justify-content: space-between;
         align-items: center;
         gap: 16px;
+
+        li a svg path{
+           transition: fill 0.4s ease-in;
+        }
+
+        li:hover a svg path{
+            fill: $light-peach;
+        }
     }
 }

@@ -1,0 +1,28 @@
+@use '../../styles/typography.scss' as *;
+@use '../../styles/colors.scss' as *;
+
+.btn{
+    padding: 18px 24px;
+    background-color: $white;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    @include Btn;
+    transition: all 0.4s ease-in;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 8px;
+
+    &:hover{
+        color: $white;
+        background-color: $light-peach;
+    }
+}
+
+.btn-dark{
+    background-color: $peach;
+
+    &:hover{
+        color: $white;
+        background-color: $light-peach;
+    }
+}

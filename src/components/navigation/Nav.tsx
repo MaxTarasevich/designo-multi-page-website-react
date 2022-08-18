@@ -3,6 +3,7 @@ import React from 'react';
 import './Nav.scss';
 
 import images from '../../constants/images'
+import { NavLink } from 'react-router-dom';
 
 interface Props{
   dark?:boolean
@@ -11,22 +12,23 @@ interface Props{
 const Nav: React.FC<Props>= ({dark}) => {
   return (
     <nav className="nav">
-
-      <div className="nav__logo">
-        <img src={dark ? images.logoLight : images.logoDark} alt="company logo" />
-      </div>
+      <NavLink to={'/'}>
+        <div className="nav__logo">
+          <img src={dark ? images.logoLight : images.logoDark} alt="company logo" />
+        </div>
+      </NavLink>
 
       <ul className={`nav__links ${dark ? 'nav__links-dark' : ''}`}>
-        <li className="nav__link">
-          OUR COMPANY
+        <li className={`nav__link ${dark ? 'nav__link-dark' : ''}`}>
+          <NavLink to={'/about'}>OUR COMPANY</NavLink>
         </li>
 
-        <li className="nav__link">
-          LOCATIONS
+        <li className={`nav__link ${dark ? 'nav__link-dark' : ''}`}>
+          <NavLink to={'/location'}>LOCATIONS</NavLink>
         </li>
 
-        <li className="nav__link">
-          CONTACT
+        <li className={`nav__link ${dark ? 'nav__link-dark' : ''}`}>
+          <NavLink to={'/contact'}> CONTACT</NavLink>
         </li>
       </ul>
       

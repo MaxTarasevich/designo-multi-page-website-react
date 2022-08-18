@@ -1,8 +1,16 @@
 import React from 'react'
+import Footer from '../components/footer/Footer'
+import Nav from '../components/navigation/Nav'
+import Wrapper from '../components/wrapper/Wrapper'
 
 const About = () => {
   return (
-    <div>About</div>
+    <>
+    <Wrapper>
+      <Nav dark={false}/>
+    </Wrapper>
+    <Footer />
+  </>
   )
 }
 
