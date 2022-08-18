@@ -2,16 +2,23 @@
 @use '../../styles/colors.scss' as *;
 
 .header{
-    position: relative;
-    background-color: $peach;
-    background-image: url(../../assets/home/desktop/bg-pattern-hero-home.svg);
+    padding-bottom: 274px;
+    background-image: url(../../assets/shared/desktop/bg-pattern-leaf.svg);
     background-repeat: no-repeat;
-    background-position: right top;
-    color:$white;
-    padding:145px 95px;
-    border-radius: 15px;
-    overflow: hidden;
-
+    background-position: bottom left;
+    
+    .container{
+        position: relative;
+        background-color: $peach;
+        background-image: url(../../assets/home/desktop/bg-pattern-hero-home.svg);
+        background-repeat: no-repeat;
+        background-position: right top;
+        color:$white;
+        padding:145px 95px;
+        border-radius: 15px;
+        overflow: hidden;
+    }
+   
     &__content{
         max-width: 540px
     }
