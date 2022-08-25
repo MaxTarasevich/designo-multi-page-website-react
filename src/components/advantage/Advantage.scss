@@ -1,0 +1,41 @@
+@use '../../styles/colors.scss' as *;
+@use '../../styles/typography.scss' as *;
+
+.advantage{
+    position: relative;
+    min-height: 668px;
+   
+    &::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 74px;
+        background-image: url(../../assets/shared/desktop/bg-pattern-leaf.svg);
+        background-repeat: no-repeat;
+        background-position: top left;
+        background-size: contain;
+        transform: rotate(180deg);
+    }
+
+    .container{
+        position: relative;
+    }
+
+    &__cards{
+        position: relative;
+        top: -124px;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    &__talk{
+        position: relative;
+        bottom: -72px;
+    }
+}
