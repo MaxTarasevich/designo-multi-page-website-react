@@ -23,6 +23,8 @@ import graphWater from '../assets/graphic-design/desktop/image-boxed-water.jpg';
 import graphChange from '../assets/graphic-design/desktop/image-change.jpg';
 import graphScience from '../assets/graphic-design/desktop/image-science.jpg';
 import aboutHero from '../assets/about/desktop/image-about-hero.jpg';
+import aboutDeal from '../assets/about/desktop/image-real-deal.jpg';
+import aboutTalent from '../assets/about/desktop/image-world-class-talent.jpg';
 
 
 const images = {
@@ -51,6 +53,8 @@ const images = {
     graphScience,
     graphWater,
     aboutHero,
+    aboutDeal,
+    aboutTalent,
   
 }
 export default images
