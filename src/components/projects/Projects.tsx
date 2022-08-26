@@ -3,31 +3,34 @@ import Wrapper from '../wrapper/Wrapper'
 
 import './Projects.scss'
 
-
-import images from '../../constants/images'
 import Card from './card/Card'
 
-const Projects = () => {
+interface Props{
+ cardData:{
+        title:string;
+        link:string;
+        img:string;
+        large:boolean;
+        }[]
+padding?:object
+}
+
+const Projects: React.FC<Props> = ({cardData,padding}) => {
   return (
-    <section className="projects">
+    <section className="projects" style={padding}>
         <Wrapper>
 
-            <Card title='Web Design' 
-                    img={images.webDesLarge} 
-                    large 
-                    link='/web-design' 
-            />
-
-            <Card title='APP DESIGN' 
-                    img={images.appDes} 
-                    link='/app-design' 
-            />
-
-            <Card title='GRAPHIC DESIGN' 
-                    img={images.graphicDes} 
-                    link='/graphic-design' 
-            />
-
+                {
+                        cardData.map((el)=>(
+                                <Card   key={el.title}
+                                        title={el.title} 
+                                        img={el.img} 
+                                        large={el.large}
+                                        link={el.link}
+                        /> 
+                        ))
+                }
+          
         </Wrapper>
     </section>
   )

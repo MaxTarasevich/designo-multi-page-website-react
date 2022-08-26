@@ -1,13 +1,15 @@
-@use '../../../styles/colors.scss' as *;
-@use '../../../styles/typography.scss' as *;
+@use '../../styles/colors.scss' as *;
+@use '../../styles/typography.scss' as *;
 
 .talk{
+    position: relative;
+    bottom: -72px;
     padding: 72px 95px 46px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: $peach;
-    background-image: url(../../../assets/shared/desktop/bg-pattern-call-to-action.svg);
+    background-image: url(../../assets/shared/desktop/bg-pattern-call-to-action.svg);
     background-repeat: no-repeat;
     background-position: right;
     border-radius: 15px;

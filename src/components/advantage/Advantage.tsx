@@ -6,7 +6,7 @@ import './Advantage.scss';
 
 import images from '../../constants/images';
 import AdvantageCard from './AdvantageCard/AdvantageCard';
-import Talk from './Talk/Talk';
+import Talk from '../Talk/Talk';
 
 const cardData = [
     {

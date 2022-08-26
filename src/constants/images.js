@@ -6,7 +6,13 @@ import graphicDes from '../assets/home/desktop/image-graphic-design.jpg';
 import webDesLarge from '../assets/home/desktop/image-web-design-large.jpg';
 import friendly from '../assets/home/desktop/illustration-friendly.svg';
 import passionate from '../assets/home/desktop/illustration-passionate.svg';
-import resouceful from '../assets/home/desktop/illustration-resourceful.svg'
+import resouceful from '../assets/home/desktop/illustration-resourceful.svg';
+import webBlogr from '../assets/web-design/desktop/image-blogr.jpg';
+import webBuilder from '../assets/web-design/desktop/image-builder.jpg';
+import webCamp from '../assets/web-design/desktop/image-camp.jpg';
+import webExpress from '../assets/web-design/desktop/image-express.jpg';
+import webPhoton from '../assets/web-design/desktop/image-photon.jpg';
+import webTransfer from '../assets/web-design/desktop/image-transfer.jpg';
 
 
 
@@ -19,6 +25,12 @@ const images = {
     webDesLarge,
     friendly,
     passionate,
-    resouceful
+    resouceful,
+    webBlogr,
+    webBuilder,
+    webCamp,
+    webPhoton,
+    webExpress,
+    webTransfer,
 }
 export default images

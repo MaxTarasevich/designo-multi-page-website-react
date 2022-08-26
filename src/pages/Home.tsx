@@ -7,6 +7,29 @@ import Nav from '../components/navigation/Nav'
 import Projects from '../components/projects/Projects'
 import Wrapper from '../components/wrapper/Wrapper'
 
+import images from '../constants/images'
+
+const projectsData = [
+  {
+    title:'WEB DESIGN',
+    link:'/web-design',
+    img:`${images.webDesLarge}`,
+    large:true,
+  },
+  {
+    title:'APP DESIGN',
+    link:'/app-design',
+    img:`${images.appDes}`,
+    large:false,
+  },
+  {
+    title:'GRAPHIC DESIGN',
+    link:'/graphic-design',
+    img:`${images.graphicDes}`,
+    large:false,
+  },
+]
+
 const Home = () => {
   return (
     <>
@@ -16,7 +39,7 @@ const Home = () => {
 
       <Header />
     
-      <Projects />
+      <Projects  cardData={projectsData} padding={{paddingBottom: '284px'}}/>
 
       <Advantage />
       

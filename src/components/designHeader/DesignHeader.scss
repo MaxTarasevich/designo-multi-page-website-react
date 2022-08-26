@@ -1,0 +1,30 @@
+@use '../../styles/colors.scss' as *;
+@use '../../styles/typography.scss' as *;
+
+.designHeader{
+    padding-bottom: 468px;
+    background-image: url(../../assets/shared/desktop/bg-pattern-leaf.svg);
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    .container{
+        padding: 64px 190px;
+        background-color: $peach;
+        background-image: url(../../assets/shared/desktop/bg-pattern-call-to-action.svg);
+        background-repeat: no-repeat;
+        background-position: right;
+        border-radius: 15px;
+        text-align: center;
+    }
+   
+
+    &__title{
+        @include H1;
+        color: $white;
+    }
+
+    &__text{
+        max-width: 400px;
+        margin: 30px auto 0;
+        color: $white;
+    }
+}

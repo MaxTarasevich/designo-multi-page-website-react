@@ -1,0 +1,26 @@
+@use '../../../styles/colors.scss' as *;
+@use '../../../styles/typography.scss' as *;
+
+.designCard{
+    max-width: 350px;
+    border-radius: 10px;
+    overflow: hidden;
+
+    &__image{
+        height: 320px;
+    }
+
+    &__content{
+        padding: 32px;
+        background-color: $very-light-peach;
+        text-align: center;
+    }
+
+    &__title{
+        margin-bottom: 20px;
+        @include H3;
+        text-transform: uppercase;
+        color: $peach;
+    }
+
+}

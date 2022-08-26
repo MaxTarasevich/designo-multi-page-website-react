@@ -1,7 +1,9 @@
 import React from 'react'
 
+import Button from '../button/Button'
+
 import './Talk.scss'
-import Button from '../../button/Button'
+
 
 const Talk = () => {
   return (

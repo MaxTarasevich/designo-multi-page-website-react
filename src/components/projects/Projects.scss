@@ -2,8 +2,9 @@
 @use '../../styles/colors.scss' as *;
 
 .projects{
-    margin-top: -114px;
-    padding-bottom: 284px;
+    position: relative;
+    top:-114px;
+    //padding-bottom: 284px;
 
     .container{
         display: grid;

@@ -1,0 +1,9 @@
+.designCards{
+    position: relative;
+    top:-308px;
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+}
