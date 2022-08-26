@@ -22,8 +22,7 @@ import appTodo from '../assets/app-design/desktop/image-todo.jpg';
 import graphWater from '../assets/graphic-design/desktop/image-boxed-water.jpg';
 import graphChange from '../assets/graphic-design/desktop/image-change.jpg';
 import graphScience from '../assets/graphic-design/desktop/image-science.jpg';
-
-
+import aboutHero from '../assets/about/desktop/image-about-hero.jpg';
 
 
 const images = {
@@ -51,5 +50,7 @@ const images = {
     graphChange,
     graphScience,
     graphWater,
+    aboutHero,
+  
 }
 export default images

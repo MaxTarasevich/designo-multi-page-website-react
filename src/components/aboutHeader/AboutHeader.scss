@@ -1,0 +1,35 @@
+@use '../../styles/colors.scss' as *;
+@use '../../styles/typography.scss' as *;
+
+
+.aboutHeader{
+    padding-bottom: 434px;
+    background-image: url(../../assets/shared/desktop/bg-pattern-leaf.svg);
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    .container{
+        display: flex;
+        background-color: $peach;
+        background-image: url(../../assets/about/desktop/bg-pattern-hero-about-desktop.svg);
+        background-repeat: no-repeat;
+        background-position: bottom left;
+        border-radius: 15px;
+        overflow: hidden;
+    }
+
+    &__content{
+        padding: 135px 82px 135px 95px;
+        max-width: 635px
+    }
+
+    &__title{
+        margin-bottom: 32px;
+        @include H1;
+        color: $white;
+    }
+
+    &__text{
+        color: $white;
+    }
+
+}
