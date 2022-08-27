@@ -25,7 +25,9 @@ import graphScience from '../assets/graphic-design/desktop/image-science.jpg';
 import aboutHero from '../assets/about/desktop/image-about-hero.jpg';
 import aboutDeal from '../assets/about/desktop/image-real-deal.jpg';
 import aboutTalent from '../assets/about/desktop/image-world-class-talent.jpg';
-
+import aboutAustrl from '../assets/shared/desktop/illustration-australia.svg';
+import aboutCanada from '../assets/shared/desktop/illustration-canada.svg';
+import aboutUK from '../assets/shared/desktop/illustration-united-kingdom.svg';
 
 const images = {
     logoDark,
@@ -55,6 +57,9 @@ const images = {
     aboutHero,
     aboutDeal,
     aboutTalent,
+    aboutAustrl,
+    aboutCanada,
+    aboutUK,
   
 }
 export default images

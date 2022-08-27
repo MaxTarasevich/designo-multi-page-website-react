@@ -1,0 +1,23 @@
+@use '../../../styles/colors.scss' as *;
+@use '../../../styles/typography.scss' as *;
+
+.aboutCard{
+    display: flex;
+    flex-direction: column;
+    max-width: 350px;
+    text-align: center;
+    gap: 32px;
+
+    &__img{
+        width: 202px;
+        height: 202px;
+        margin: 0 auto;
+        background-image: url(../../../assets/shared/desktop/bg-pattern-small-circle.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .btn-dark{
+        color:$white;
+    }
+}

@@ -1,0 +1,14 @@
+.aboutCards{
+    position: relative;
+    padding-top: 160px;
+    top:-274px;
+    background-image: url(../../assets/shared/desktop/bg-pattern-leaf.svg);
+    background-repeat: no-repeat;
+    background-position: 900px 200px;
+
+    .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}

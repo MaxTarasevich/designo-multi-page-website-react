@@ -13,6 +13,7 @@
     background-position: bottom center;
 
     &-revers{
+        top: -88px;
         flex-direction: row-reverse;
         background-position: bottom left;
     }

@@ -1,4 +1,5 @@
 import React from 'react'
+import AboutCards from '../components/aboutCards/AboutCards'
 import AboutHeader from '../components/aboutHeader/AboutHeader'
 import AboutInfo from '../components/aboutInfo/AboutInfo'
 import Footer from '../components/footer/Footer'
@@ -42,14 +43,21 @@ const About = () => {
                   text2={AboutCardInfoData[0].text2}
                   revers={AboutCardInfoData[0].revers}/>
 
+    </Wrapper>
+
+      <AboutCards />
+      
+    <Wrapper>
+
       <AboutInfo img={AboutCardInfoData[1].img}
                   title={AboutCardInfoData[1].title}
                   text1={AboutCardInfoData[1].text1}
                   text2={AboutCardInfoData[1].text2}
                   revers={AboutCardInfoData[1].revers}/>
 
-        <Talk />
-      </Wrapper>
+      <Talk />
+
+    </Wrapper>
 
     <Footer />
   </>
