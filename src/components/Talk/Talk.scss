@@ -4,15 +4,18 @@
 .talk{
     position: relative;
     bottom: -72px;
-    padding: 72px 95px 46px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: $peach;
-    background-image: url(../../assets/shared/desktop/bg-pattern-call-to-action.svg);
-    background-repeat: no-repeat;
-    background-position: right;
-    border-radius: 15px;
+
+    .container{
+        padding: 72px 95px 46px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: $peach;
+        background-image: url(../../assets/shared/desktop/bg-pattern-call-to-action.svg);
+        background-repeat: no-repeat;
+        background-position: right;
+        border-radius: 15px;
+    }
 
     &__info{
         max-width: 460px;

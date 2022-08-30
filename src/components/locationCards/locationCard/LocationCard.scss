@@ -1,0 +1,47 @@
+@use '../../../styles/colors.scss' as *;
+@use '../../../styles/typography.scss' as *;
+
+.locationCard{
+    display: flex;
+    gap: 30px;
+
+    &-revers{
+        flex-direction: row-reverse;
+    }
+
+    &__info{
+        max-width: 730px;
+        flex-grow: 1;
+        padding: 88px 95px;
+        background-color: $very-light-peach;
+        background-image: url(../../../assets/shared/desktop/bg-pattern-two-circles.svg);
+        background-repeat: no-repeat;
+        background-position: left bottom;
+        border-radius: 15px;
+    }
+
+    &__map{
+        max-width: 350px;
+        border-radius: 15px;
+        overflow: hidden;
+    }
+
+    &__title{
+        @include H2;
+        color: $peach;
+    }
+
+    &__content{
+        display: flex;
+        gap: 80px;
+    }
+
+    &__office,
+    &__contacts{
+        margin-top: 24px;
+
+        li:first-of-type{
+            font-weight: 700;
+        }
+    }
+}

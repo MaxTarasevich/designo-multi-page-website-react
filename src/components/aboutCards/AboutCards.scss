@@ -2,13 +2,23 @@
     position: relative;
     padding-top: 160px;
     top:-274px;
-    background-image: url(../../assets/shared/desktop/bg-pattern-leaf.svg);
-    background-repeat: no-repeat;
-    background-position: 900px 200px;
+
+    &::before{
+        content: '';
+        position: absolute;
+        bottom: -85%;
+        right: -25%;
+        width: 1006px;
+        height: 600px;
+        background-image: url(../../assets//shared/desktop/bg-pattern-leaf.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        z-index: -1;
+    }
 
     .container{
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
     }
 }

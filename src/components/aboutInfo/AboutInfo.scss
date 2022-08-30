@@ -4,18 +4,26 @@
 .aboutInfo{
     position: relative;
     top: -274px;
-    display: flex;
-    border-radius: 15px;
-    overflow: hidden;
-    background-color: $very-light-peach;
-    background-image: url(../../assets/shared/desktop/bg-pattern-two-circles.svg);
-    background-repeat: no-repeat;
-    background-position: bottom center;
+   
+
+    .container{
+        display: flex;
+        border-radius: 15px;
+        overflow: hidden;
+        background-color: $very-light-peach;
+        background-image: url(../../assets/shared/desktop/bg-pattern-two-circles.svg);
+        background-repeat: no-repeat;
+        background-position: bottom center;
+    }
 
     &-revers{
         top: -88px;
-        flex-direction: row-reverse;
-        background-position: bottom left;
+        
+        .container{
+            flex-direction: row-reverse;
+            background-position: bottom left;
+        }
+       
     }
 
     &__content{

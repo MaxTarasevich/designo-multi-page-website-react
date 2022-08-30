@@ -28,12 +28,14 @@ const AboutCards = () => {
   return (
     <div className="aboutCards">
         <Wrapper>
+            
             {CardsData.map((el)=>(
                 <AboutCard  key={el.title}
                             img={el.img} 
                             title={el.title} 
                             btnText={el.btnText} />
             ))}
+
         </Wrapper>
     </div>
   )

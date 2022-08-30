@@ -21,7 +21,7 @@ const AboutCard:React.FC<Props> = ({img,title,btnText}) => {
             {title}
         </h3>
 
-        <Button text={btnText} dark={true} link={'/'} />
+        <Button text={btnText} dark={true} link={'/location'} />
 
     </div>
   )

@@ -5,7 +5,6 @@ import Footer from '../components/footer/Footer'
 import Header from '../components/header/Header'
 import Nav from '../components/navigation/Nav'
 import Projects from '../components/projects/Projects'
-import Wrapper from '../components/wrapper/Wrapper'
 
 import images from '../constants/images'
 
@@ -33,9 +32,7 @@ const projectsData = [
 const Home = () => {
   return (
     <>
-      <Wrapper>
-        <Nav dark={false}/>
-      </Wrapper>
+      <Nav dark={false}/>
 
       <Header />
     

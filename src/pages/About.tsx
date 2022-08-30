@@ -5,7 +5,6 @@ import AboutInfo from '../components/aboutInfo/AboutInfo'
 import Footer from '../components/footer/Footer'
 import Nav from '../components/navigation/Nav'
 import Talk from '../components/Talk/Talk'
-import Wrapper from '../components/wrapper/Wrapper'
 
 import images from '../constants/images'
 
@@ -29,35 +28,25 @@ const AboutCardInfoData=[
 const About = () => {
   return (
     <>
-    <Wrapper>
-      <Nav dark={false}/>
-    </Wrapper>
-
+    <Nav dark={false}/>
+    
     <AboutHeader />
-
-    <Wrapper>
        
-      <AboutInfo img={AboutCardInfoData[0].img}
+    <AboutInfo img={AboutCardInfoData[0].img}
                   title={AboutCardInfoData[0].title}
                   text1={AboutCardInfoData[0].text1}
                   text2={AboutCardInfoData[0].text2}
                   revers={AboutCardInfoData[0].revers}/>
 
-    </Wrapper>
-
-      <AboutCards />
+    <AboutCards />
       
-    <Wrapper>
-
-      <AboutInfo img={AboutCardInfoData[1].img}
+    <AboutInfo img={AboutCardInfoData[1].img}
                   title={AboutCardInfoData[1].title}
                   text1={AboutCardInfoData[1].text1}
                   text2={AboutCardInfoData[1].text2}
                   revers={AboutCardInfoData[1].revers}/>
 
-      <Talk />
-
-    </Wrapper>
+    <Talk />
 
     <Footer />
   </>

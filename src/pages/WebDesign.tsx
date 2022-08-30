@@ -6,7 +6,6 @@ import Footer from '../components/footer/Footer'
 import Nav from '../components/navigation/Nav'
 import Projects from '../components/projects/Projects'
 import Talk from '../components/Talk/Talk'
-import Wrapper from '../components/wrapper/Wrapper'
 
 import images from '../constants/images'
 
@@ -69,18 +68,16 @@ const projectsData = [
 const WebDesign = () => {
   return (
     <>
-      <Wrapper>
-        <Nav dark={false}/>
-      </Wrapper>
+      <Nav dark={false}/>
 
       <DesignHeader title={header.title} 
                       text={header.text} />
                       
-      <Wrapper>
+     
         <DesignCards data={WebDesignData}/>
         <Projects cardData={projectsData}/>
         <Talk />
-      </Wrapper>
+     
      
 
       <Footer />

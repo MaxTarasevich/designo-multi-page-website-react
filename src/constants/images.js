@@ -28,6 +28,7 @@ import aboutTalent from '../assets/about/desktop/image-world-class-talent.jpg';
 import aboutAustrl from '../assets/shared/desktop/illustration-australia.svg';
 import aboutCanada from '../assets/shared/desktop/illustration-canada.svg';
 import aboutUK from '../assets/shared/desktop/illustration-united-kingdom.svg';
+import locationMap from '../assets/locations/desktop/image-map-canada.png';
 
 const images = {
     logoDark,
@@ -60,6 +61,6 @@ const images = {
     aboutAustrl,
     aboutCanada,
     aboutUK,
-  
+    locationMap,
 }
 export default images

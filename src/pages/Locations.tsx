@@ -1,15 +1,19 @@
 import React from 'react'
 
 import Footer from '../components/footer/Footer'
+import LocationCards from '../components/locationCards/LocationCards'
 import Nav from '../components/navigation/Nav'
-import Wrapper from '../components/wrapper/Wrapper'
+import Talk from '../components/Talk/Talk'
 
 const Locations = () => {
   return (
     <>
-      <Wrapper>
-        <Nav dark={false}/>
-      </Wrapper>
+      <Nav dark={false}/>
+
+      <LocationCards />
+
+      <Talk />
+
       <Footer />
     </>
   )

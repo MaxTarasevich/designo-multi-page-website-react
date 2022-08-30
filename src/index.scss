@@ -6,6 +6,12 @@
   box-sizing: border-box;
 }
 
+
+body{
+  overflow-x: hidden;
+  @include Body;
+ }
+
 h1,h2,h3,p{
   margin: 0;
   padding: 0;
@@ -25,8 +31,4 @@ a{
 img{
   width: 100%;
   height: 100%;
-}
-
-body{
- @include Body;
 }
