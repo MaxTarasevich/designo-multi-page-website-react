@@ -5,10 +5,12 @@
     position: relative;
     border-radius: 15px;
     overflow: hidden;
+    cursor: pointer;
 
     &:nth-of-type(3n){
         grid-column: 2/2;
     }
+
 }
 
 .projects__item-large{
@@ -29,6 +31,11 @@
     align-items: center;
     background-color: rgba($black,0.7);
     background-blend-mode: multiply;
+    transition: all 0.4s ease-in-out;
+
+    &:hover{
+        background-color: rgba($peach,0.8);
+    }
 }
 
 .projects__title{
