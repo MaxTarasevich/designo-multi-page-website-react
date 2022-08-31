@@ -24,9 +24,13 @@ const CardsData = [
     },
 ]
 
-const AboutCards = () => {
+interface Props{
+    contact?:boolean
+}
+
+const AboutCards:React.FC<Props> = ({contact}) => {
   return (
-    <div className="aboutCards">
+    <div className={`aboutCards ${contact ? 'aboutCards-contact' : ''}`}>
         <Wrapper>
             
             {CardsData.map((el)=>(

@@ -25,12 +25,21 @@ const AboutCardInfoData=[
   }
 ]
 
+
+const AboutHeaderData = {
+  title:'About Us',
+  text:'Founded in 2010, we are a creative agency that produces lasting results for our clients. We’ve partnered with many startups, corporations, and nonprofits alike to craft designs that make real impact. We’re always looking forward to creating brands, products, and digital experiences that connect with our clients’ audiences.',
+  image:`${images.aboutHero}`
+}
+
 const About = () => {
   return (
     <>
     <Nav dark={false}/>
     
-    <AboutHeader />
+    <AboutHeader title={AboutHeaderData.title}
+                  text={AboutHeaderData.text}
+                  image={AboutHeaderData.image} />
        
     <AboutInfo img={AboutCardInfoData[0].img}
                   title={AboutCardInfoData[0].title}

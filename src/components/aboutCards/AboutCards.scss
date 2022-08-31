@@ -16,6 +16,16 @@
         z-index: -1;
     }
 
+    &-contact{
+        top:0px;
+        padding-bottom: 160px;
+
+        &::before{
+            top: 250px;
+            right: 0%;
+        }
+    }
+
     .container{
         display: flex;
         justify-content: space-around;

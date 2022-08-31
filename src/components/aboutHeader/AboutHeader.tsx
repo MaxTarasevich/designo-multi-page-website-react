@@ -1,28 +1,42 @@
 import React from 'react'
+import Button from '../button/Button'
+import ContactForm from '../contactForm/ContactForm'
 
 import Wrapper from '../wrapper/Wrapper'
 
-import images from '../../constants/images'
-
 import './AboutHeader.scss'
 
+interface Props{
+    title:string
+    text:string
+    image?:string
+    contact?:boolean
+}
 
-const AboutHeader = () => {
+
+
+const AboutHeader:React.FC<Props> = ({title,text,image,contact}) => {
   return (
-    <header className="aboutHeader">
+    <header className={`aboutHeader ${contact ? 'aboutHeader-contact' : ''}`}>
         <Wrapper>
             <div className="aboutHeader__content">
                 <h1 className="aboutHeader__title">
-                    About Us
+                    {title}
                 </h1>
                 <p className="aboutHeader__text">
-                    Founded in 2010, we are a creative agency that produces lasting results for our clients. We’ve partnered with many startups, corporations, and nonprofits alike to craft designs that make real impact. We’re always looking forward to creating brands, products, and digital experiences that connect with our clients’ audiences.
+                    {text}
                 </p>
             </div>
 
-            <div className="aboutHeader__image">
-                <img src={images.aboutHero} alt="About Us" />
-            </div>
+            {
+                contact ? 
+                    <ContactForm />
+                :
+                    <div className="aboutHeader__image">
+                        <img src={image} alt="About Us" />
+                    </div>
+            }
+           
         </Wrapper>
     </header>
   )
