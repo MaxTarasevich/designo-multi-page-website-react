@@ -17,6 +17,10 @@
         background-position: top left;
         background-size: contain;
         transform: rotate(180deg);
+
+        @media (max-width:1200px){
+            background-image: none;
+        }
     }
 
     .container{

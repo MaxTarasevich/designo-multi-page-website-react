@@ -9,7 +9,11 @@ interface Props{
  cardData:{
         title:string;
         link:string;
-        img:string;
+        img:{
+                desktop:string,
+                tablet:string,
+                mobile:string
+              };
         large:boolean;
         }[]
 padding?:object

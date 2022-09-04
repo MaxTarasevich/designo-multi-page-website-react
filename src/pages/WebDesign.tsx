@@ -8,6 +8,7 @@ import Projects from '../components/projects/Projects'
 import Talk from '../components/Talk/Talk'
 
 import images from '../constants/images'
+import imagesTablet from '../constants/imagesTablet'
 
 
 const header = {
@@ -54,13 +55,21 @@ const projectsData = [
   {
     title:'APP DESIGN',
     link:'/app-design',
-    img:`${images.appDes}`,
+    img:{
+      desktop:`${images.appDes}`,
+      tablet:`${imagesTablet.appDes}`,
+      mobile:`${images.webDesLarge}`
+    },
     large:false,
   },
   {
     title:'GRAPHIC DESIGN',
     link:'/graphic-design',
-    img:`${images.graphicDes}`,
+    img:{
+      desktop:`${images.graphicDes}`,
+      tablet:`${imagesTablet.graphicDes}`,
+      mobile:`${images.webDesLarge}`
+    },
     large:false,
   },
 ]

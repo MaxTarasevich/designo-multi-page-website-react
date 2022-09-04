@@ -8,23 +8,37 @@ import Projects from '../components/projects/Projects'
 
 import images from '../constants/images'
 
+import imagesTablet from '../constants/imagesTablet'
+
 const projectsData = [
   {
     title:'WEB DESIGN',
     link:'/web-design',
-    img:`${images.webDesLarge}`,
+    img:{
+      desktop:`${images.webDesLarge}`,
+      tablet:`${imagesTablet.webDes}`,
+      mobile:`${images.webDesLarge}`
+    },
     large:true,
   },
   {
     title:'APP DESIGN',
     link:'/app-design',
-    img:`${images.appDes}`,
+    img:{
+      desktop:`${images.appDes}`,
+      tablet:`${imagesTablet.appDes}`,
+      mobile:`${images.webDesLarge}`
+    },
     large:false,
   },
   {
     title:'GRAPHIC DESIGN',
     link:'/graphic-design',
-    img:`${images.graphicDes}`,
+    img:{
+      desktop:`${images.graphicDes}`,
+      tablet:`${imagesTablet.graphicDes}`,
+      mobile:`${images.webDesLarge}`
+    },
     large:false,
   },
 ]

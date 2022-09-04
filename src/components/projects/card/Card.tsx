@@ -6,15 +6,22 @@ import './Card.scss'
 
 interface Props {
     title:string;
-    img:string;
+    img:{
+      desktop:string,
+      tablet:string,
+      mobile:string
+    };
     link:string;
     large?:Boolean;
 }
 
 const Card: React.FC<Props> = ({title,img,link,large}) => {
   return (
-    <div className={`projects__item ${large ? 'projects__item-large' : ''}`}>
-                <img src={img} alt={title} />
+    <picture className={`projects__item ${large ? 'projects__item-large' : ''}`}>
+                
+                <source media="(max-width:768px)" srcSet="" />
+                <source media="(max-width:1200px)" srcSet={img.tablet} />
+                <img src={img.desktop} alt={title} />
 
                 <div className="projects__content">
                     <h2 className="projects__title">
@@ -27,7 +34,7 @@ const Card: React.FC<Props> = ({title,img,link,large}) => {
                     </Link>
                 </div>
 
-    </div>
+    </picture>
   )
 }
 
