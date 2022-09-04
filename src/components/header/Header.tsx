@@ -4,6 +4,8 @@ import Button from '../button/Button'
 
 
 import images from '../../constants/images'
+import imagesTablet from '../../constants/imagesTablet'
+
 import './Header.scss'
 import Wrapper from '../wrapper/Wrapper'
 
@@ -24,9 +26,10 @@ const Header = () => {
                 <Button text='Learn More' dark={false} />
             </div>
 
-            <div className="header__img">
+            <picture className="header__img">
+                <source media="(max-width:1200px )" srcSet={imagesTablet.hero} />
                 <img src={images.heroPhone} alt="Phone" />
-            </div>
+            </picture>
         </Wrapper>
        
     </header>

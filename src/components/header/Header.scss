@@ -18,30 +18,54 @@
         padding:145px 95px;
         border-radius: 15px;
         overflow: hidden;
+
+        @media (max-width:1200px){
+            padding: 60px 60px 0px 60px;
+            background-position: 180px center;
+            background-size: 640px;
+        }
     }
    
     &__content{
-        max-width: 540px
+        max-width: 540px;
+
+        @media (max-width:1200px){
+            max-width:100%;
+            text-align: center;
+        }
     }
 
     &__title{
         @include H1;
         color:$white;
+
+        @media (max-width:1200px){
+            max-width:570px;
+            margin: 0 auto;
+        }
     }
 
     &__text{
         margin: 40px 0px;
         max-width: 440px;
+
+        @media (max-width:1200px){
+            margin: 20px auto;
+        }
     }
 
     &__img{
         position: absolute;
+        display: block;
         top: -20px;
         right: 0;
-        /*
-        object-fit: contain;
-        width: 284px;
-        height: 573px;
-        */
+
+        @media (max-width:1200px){
+            position: relative;
+            top: 10px;
+            max-width: 284px;
+            margin: 70px auto 0px;
+            
+        }
     }
 }
