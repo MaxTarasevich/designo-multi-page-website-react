@@ -6,6 +6,11 @@
     background-image: url(../../assets/shared/desktop/bg-pattern-leaf.svg);
     background-repeat: no-repeat;
     background-position: bottom left;
+
+        @media (max-width:1200px){
+            background-image: none;
+            padding-bottom: 120px;
+        }
     
     .container{
         position: relative;

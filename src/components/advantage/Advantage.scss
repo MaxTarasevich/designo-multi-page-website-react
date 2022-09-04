@@ -36,6 +36,10 @@
         flex-wrap: wrap;
         justify-content: center;
         gap: 30px;
+
+        @media (max-width:1200px){
+            top: 0px;
+        }
     }
 
 }

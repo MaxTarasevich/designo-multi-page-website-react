@@ -5,6 +5,11 @@
     position: relative;
     top:-114px;
 
+    @media (max-width:1200px){
+        top:0px;
+        padding-bottom: 120px !important;
+    }
+
     .container{
         display: grid;
         grid-template-columns: 1fr 1fr;
