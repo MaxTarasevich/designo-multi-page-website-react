@@ -10,9 +10,9 @@ interface Props{
 
 const Wrapper: React.FC<Props> = ({children,style}) => {
   return (
-    <section className={`container`} style={style}>
+    <div className={`container`} style={style}>
         {children}
-    </section>
+    </div>
   )
 }
 

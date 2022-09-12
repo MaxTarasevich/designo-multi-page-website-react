@@ -27,4 +27,13 @@
         margin: 30px auto 0;
         color: $white;
     }
+
+    @media(max-width:1200px){
+        padding-bottom: 120px;
+        background-image: none;
+    }
+
+    @media(max-width:810px){
+        padding-bottom: 96px;
+    }
 }

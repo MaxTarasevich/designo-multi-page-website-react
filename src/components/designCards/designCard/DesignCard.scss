@@ -23,4 +23,30 @@
         color: $peach;
     }
 
+    @media (max-width:810px){
+        max-width: 690px;
+        display: flex;
+
+        &__image{
+            height: 310px;
+            min-width: 340px;
+        }
+
+        &__content{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    @media (max-width:640px){
+        flex-direction: column;
+        width: 320px;
+
+        &__image{
+            height: 320px;
+        }
+    }
+
 }

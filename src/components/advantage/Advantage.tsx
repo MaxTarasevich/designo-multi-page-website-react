@@ -28,7 +28,7 @@ const cardData = [
 const Advantage = () => {
   return (
     <section className="advantage">
-        <Wrapper>
+       
 
             <div className="advantage__cards">
                 
@@ -46,7 +46,7 @@ const Advantage = () => {
                 <Talk />
             </div>
             
-        </Wrapper>
+       
     </section>
   )
 }
