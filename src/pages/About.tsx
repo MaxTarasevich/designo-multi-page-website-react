@@ -35,7 +35,7 @@ const AboutHeaderData = {
 const About = () => {
   return (
     <>
-    <Nav dark={false}/>
+    <Nav dark={false} header/>
     
     <AboutHeader title={AboutHeaderData.title}
                   text={AboutHeaderData.text}

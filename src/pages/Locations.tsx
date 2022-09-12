@@ -8,7 +8,7 @@ import Talk from '../components/Talk/Talk'
 const Locations = () => {
   return (
     <>
-      <Nav dark={false}/>
+      <Nav dark={false} header/>
 
       <LocationCards />
 

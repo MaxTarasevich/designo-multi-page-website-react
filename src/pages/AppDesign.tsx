@@ -71,7 +71,7 @@ const AppDesign = () => {
   return (
     <>
      
-      <Nav dark={false}/>
+      <Nav dark={false} header/>
      
       <DesignHeader title={header.title} 
                       text={header.text} />

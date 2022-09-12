@@ -26,7 +26,7 @@ const LocationCard:React.FC<Props> = ({title,revers,office,contacts}) => {
                 <ul className="locationCard__office">
                     {
                         office.map((el)=>(
-                            <li>{el}</li>
+                            <li key={el}>{el}</li>
                         ))
                     }
                 </ul>
@@ -34,7 +34,7 @@ const LocationCard:React.FC<Props> = ({title,revers,office,contacts}) => {
                 <ul className="locationCard__contacts">
                     {
                         contacts.map((el)=>(
-                            <li>{el}</li>
+                            <li key={el}>{el}</li>
                         ))
                     }
                 </ul>

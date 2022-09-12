@@ -46,7 +46,7 @@ const projectsData = [
 const Home = () => {
   return (
     <>
-      <Nav dark={false}/>
+      <Nav dark={false} header/>
 
       <Header />
     

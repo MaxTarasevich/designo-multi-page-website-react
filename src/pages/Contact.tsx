@@ -14,7 +14,7 @@ const ContactHeaderData = {
 const Contact = () => {
   return (
     <>
-      <Nav dark={false}/>
+      <Nav dark={false} header/>
 
       <AboutHeader title={ContactHeaderData.title}
                     text={ContactHeaderData.text}
