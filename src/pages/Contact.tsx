@@ -22,7 +22,7 @@ const Contact = () => {
 
       <AboutCards contact={true}/>
 
-      <Footer />
+      <Footer className='footer-contacts'/>
     </>
   )
 }

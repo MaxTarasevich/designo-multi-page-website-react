@@ -6,9 +6,13 @@ import {IconFacebook,IconInstagram,IconPinterest,IconTwitter,IconYoutube} from '
 
 import './Footer.scss';
 
-const Footer = () => {
+interface Props{
+    className?:string
+}
+
+const Footer:React.FC<Props> = ({className}) => {
   return (
-    <footer className="footer">
+    <footer className={`footer ${className}`}>
         <Wrapper>
             <Nav dark/>
 
