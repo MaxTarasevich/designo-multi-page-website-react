@@ -7,6 +7,11 @@
     background-image: url(../../assets/shared/desktop/bg-pattern-leaf.svg);
     background-repeat: no-repeat;
     background-position: bottom left;
+
+    @media(max-width:768px){
+        padding-bottom: 0px;
+    }
+
     .container{
         display: flex;
         background-color: $peach;
@@ -20,6 +25,11 @@
             flex-direction: column;
             text-align: center;
         }
+
+        @media(max-width:768px){
+            border-radius: 0px;
+        }
+       
     }
 
     &-contact{

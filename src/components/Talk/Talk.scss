@@ -21,6 +21,11 @@
             text-align: center;
         }
 
+        @media (max-width:768px){
+            margin: 0 24px;
+            padding: 64px 24px;
+        }
+
     }
 
     &__info{

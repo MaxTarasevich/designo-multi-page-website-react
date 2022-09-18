@@ -4,6 +4,10 @@
 .aboutInfo{
     position: relative;
     top: -274px;
+
+    @media (max-width:768px){
+        top:0px;
+    }
    
 
     .container{
@@ -14,21 +18,61 @@
         background-image: url(../../assets/shared/desktop/bg-pattern-two-circles.svg);
         background-repeat: no-repeat;
         background-position: bottom center;
+
+        @media (max-width:900px){
+            flex-direction: column;
+        }
+
+        @media (max-width:768px){
+            border-radius: 0px;
+        }
     }
 
     &-revers{
         top: -88px;
+
+        @media (max-width:768px){
+            top:0px;
+        }
         
         .container{
             flex-direction: row-reverse;
             background-position: bottom left;
+
+            @media (max-width:900px){
+                flex-direction: column;
+            }
         }
        
+    }
+
+    &__img{
+        min-width: 43%;
+
+        @media (max-width:900px){
+            max-height: 320px;
+        }
+
+        img{
+            object-fit: cover;
+            object-position: center;
+        }
     }
 
     &__content{
         max-width: 635px;
         padding: 154px 96px 94px;
+
+        @media (max-width:900px){
+            max-width: 572px;
+            padding: 68px 58px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        @media (max-width:768px){
+            padding: 80px 24px;
+        }
     }
 
     &__title{
