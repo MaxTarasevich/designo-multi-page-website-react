@@ -1,5 +1,4 @@
 import React from 'react'
-import Button from '../button/Button'
 import ContactForm from '../contactForm/ContactForm'
 
 import Wrapper from '../wrapper/Wrapper'
@@ -9,7 +8,11 @@ import './AboutHeader.scss'
 interface Props{
     title:string
     text:string
-    image?:string
+    image?:{
+        desktop:string,
+        tablet:string,
+        mobile:string
+    }
     contact?:boolean
 }
 
@@ -32,9 +35,11 @@ const AboutHeader:React.FC<Props> = ({title,text,image,contact}) => {
                 contact ? 
                     <ContactForm />
                 :
-                    <div className="aboutHeader__image">
-                        <img src={image} alt="About Us" />
-                    </div>
+                    <picture className="aboutHeader__image">
+                        <source media="(max-width:768px)" srcSet={image?.mobile} />
+                        <source media="(max-width:900px )" srcSet={image?.tablet} />
+                        <img src={image?.desktop} alt="About Us" />
+                    </picture>
             }
            
         </Wrapper>

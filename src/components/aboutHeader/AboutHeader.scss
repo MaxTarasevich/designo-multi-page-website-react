@@ -15,6 +15,11 @@
         background-position: bottom left;
         border-radius: 15px;
         overflow: hidden;
+
+        @media(max-width:900px){
+            flex-direction: column;
+            text-align: center;
+        }
     }
 
     &-contact{
@@ -24,7 +29,17 @@
 
     &__content{
         padding: 135px 82px 135px 95px;
-        max-width: 635px
+        max-width: 635px;
+
+        @media(max-width:900px){
+            order: 2;
+            padding: 64px 58px;
+            margin: 0 auto;
+        }
+
+        @media(max-width:768px){
+            padding: 80px 24px;
+        }
     }
 
     &__title{
@@ -35,6 +50,22 @@
 
     &__text{
         color: $white;
+    }
+
+    &__image{
+        min-width: 43%;
+
+        @media(max-width:900px){
+            order: 1;
+        }
+
+        @media(max-width:768px){
+            max-height: 320px;
+        }
+
+        img{
+            object-fit: cover;
+        }
     }
 
 }
