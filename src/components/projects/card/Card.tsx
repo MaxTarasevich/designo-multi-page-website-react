@@ -17,24 +17,26 @@ interface Props {
 
 const Card: React.FC<Props> = ({title,img,link,large}) => {
   return (
-    <picture className={`projects__item ${large ? 'projects__item-large' : ''}`}>
-                
-                <source media="(max-width:768px)" srcSet="" />
-                <source media="(max-width:1200px)" srcSet={img.tablet} />
-                <img src={img.desktop} alt={title} />
+    <Link to={link} className={`projects__item ${large ? 'projects__item-large' : ''}`}>
+      <picture>
+                  
+                  <source media="(max-width:768px)" srcSet={img.mobile} />
+                  <source media="(max-width:1200px)" srcSet={img.tablet} />
+                  <img src={img.desktop} alt={title} />
 
-                <div className="projects__content">
-                    <h2 className="projects__title">
-                        {title}
-                    </h2>
+                  <div className="projects__content">
+                      <h2 className="projects__title">
+                          {title}
+                      </h2>
 
-                    <Link to={link} className='projects__link'>
-                        VIEW PROJECTS
-                        <IconRightArrow />
-                    </Link>
-                </div>
+                      <div className='projects__link'>
+                          VIEW PROJECTS
+                          <IconRightArrow />
+                      </div>
+                  </div>
 
-    </picture>
+      </picture>
+    </Link>
   )
 }
 

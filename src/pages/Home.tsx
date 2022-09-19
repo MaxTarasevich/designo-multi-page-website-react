@@ -7,17 +7,17 @@ import Nav from '../components/navigation/Nav'
 import Projects from '../components/projects/Projects'
 
 import images from '../constants/images'
-
 import imagesTablet from '../constants/imagesTablet'
+import imagesMobile from '../constants/imagesMobile'
 
 const projectsData = [
   {
     title:'WEB DESIGN',
     link:'/web-design',
     img:{
-      desktop:`${images.webDesLarge}`,
-      tablet:`${imagesTablet.webDes}`,
-      mobile:`${images.webDesLarge}`
+      desktop:images.webDesLarge,
+      tablet:imagesTablet.webDes,
+      mobile:imagesMobile.webDes
     },
     large:true,
   },
@@ -25,9 +25,9 @@ const projectsData = [
     title:'APP DESIGN',
     link:'/app-design',
     img:{
-      desktop:`${images.appDes}`,
-      tablet:`${imagesTablet.appDes}`,
-      mobile:`${images.webDesLarge}`
+      desktop:images.appDes,
+      tablet:imagesTablet.appDes,
+      mobile:imagesMobile.appDes
     },
     large:false,
   },
@@ -35,9 +35,9 @@ const projectsData = [
     title:'GRAPHIC DESIGN',
     link:'/graphic-design',
     img:{
-      desktop:`${images.graphicDes}`,
-      tablet:`${imagesTablet.graphicDes}`,
-      mobile:`${images.webDesLarge}`
+      desktop:images.graphicDes,
+      tablet:imagesTablet.graphicDes,
+      mobile:imagesMobile.graphicDes
     },
     large:false,
   },

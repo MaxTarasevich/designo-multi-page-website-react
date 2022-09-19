@@ -35,10 +35,22 @@
     &-contact{
         padding-bottom:0px;
         background-image: none;
+
+        @media(max-width:950px){
+            .aboutHeader__content{
+                padding: 135px 30px 135px 55px;
+            }
+        }
+
+        @media(max-width:900px){
+            .aboutHeader__content{
+                padding-bottom: 0px;
+            }
+        }
     }
 
     &__content{
-        padding: 135px 82px 135px 95px;
+        padding: 135px 30px 135px 95px;
         max-width: 635px;
 
         @media(max-width:900px){

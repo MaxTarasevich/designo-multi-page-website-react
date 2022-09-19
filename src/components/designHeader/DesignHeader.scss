@@ -7,13 +7,17 @@
     background-repeat: no-repeat;
     background-position: bottom left;
     .container{
-        padding: 64px 190px;
+        padding: 64px 0px;
         background-color: $peach;
         background-image: url(../../assets/shared/desktop/bg-pattern-call-to-action.svg);
         background-repeat: no-repeat;
         background-position: right;
         border-radius: 15px;
         text-align: center;
+
+        @media (max-width:768px){
+            border-radius: 0px;
+        }
     }
    
 

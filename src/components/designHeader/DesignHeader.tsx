@@ -17,7 +17,7 @@ const DesignHeader: React.FC<Props> = ({title,text}) => {
             {title}
           </h1>
           <p className="designHeader__text">
-          {text}
+            {text}
           </p>
         </Wrapper>
       </header>

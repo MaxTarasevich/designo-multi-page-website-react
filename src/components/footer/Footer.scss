@@ -8,7 +8,7 @@
     .nav{
         padding: 40px 0;
 
-        @media (max-width:750px){
+        @media (max-width:768px){
 
             .container{
                 position: relative;
@@ -45,7 +45,7 @@
         color: rgba($white,0.5);
         line-height: 1.6;
 
-        @media (max-width:750px){
+        @media (max-width:768px){
             flex-direction: column;
             justify-content: center;
             align-items: center;

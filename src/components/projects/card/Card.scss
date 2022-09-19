@@ -17,6 +17,12 @@
         margin-top: 32px;
     }
 
+    @media (max-width:768px){
+        max-height: 250px;
+        max-width: 327px;
+        margin: 24px auto;
+    }
+
 }
 
 .projects__item-large{
