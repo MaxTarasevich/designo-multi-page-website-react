@@ -1,6 +1,6 @@
 import React from 'react'
 
-import images from '../../../constants/images'
+import Map from '../../map/Map'
 
 import './LocationCard.scss'
 
@@ -9,9 +9,13 @@ interface Props{
     revers?:boolean
     office:string[]
     contacts:string[]
+    location:{
+        lat:number,
+        lng:number
+    }
 }
 
-const LocationCard:React.FC<Props> = ({title,revers,office,contacts}) => {
+const LocationCard:React.FC<Props> = ({title,revers,office,contacts, location}) => {
   return (
     <div className={`locationCard ${revers ? 'locationCard-revers' : ''}`}>
 
@@ -44,7 +48,7 @@ const LocationCard:React.FC<Props> = ({title,revers,office,contacts}) => {
         </div>
 
         <div className="locationCard__map">
-            <img src={images.locationMap} alt={title} />
+                    <Map location={location}/>
         </div>
 
     </div>
