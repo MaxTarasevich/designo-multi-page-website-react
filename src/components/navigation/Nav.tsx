@@ -31,15 +31,15 @@ const Nav: React.FC<Props>= ({dark, header}) => {
                         ${header ? 'nav__links-header' : ''}
                         ${burger ? 'active' : ''}`}>
           <li className={`nav__link ${dark ? 'nav__link-dark' : ''}`}>
-            <NavLink to={'/about'}>OUR COMPANY</NavLink>
+            <NavLink to={'/designo-multi-page-website-react/about'}>OUR COMPANY</NavLink>
           </li>
 
           <li className={`nav__link ${dark ? 'nav__link-dark' : ''}`}>
-            <NavLink to={'/location'}>LOCATIONS</NavLink>
+            <NavLink to={'/designo-multi-page-website-react/location'}>LOCATIONS</NavLink>
           </li>
 
           <li className={`nav__link ${dark ? 'nav__link-dark' : ''}`}>
-            <NavLink to={'/contact'}> CONTACT</NavLink>
+            <NavLink to={'/designo-multi-page-website-react/contact'}> CONTACT</NavLink>
           </li>
         </ul>
     {

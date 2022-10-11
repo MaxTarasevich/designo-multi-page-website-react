@@ -18,13 +18,13 @@ function App() {
   return (
     <BrowserRouter>
     <Routes>
-     <Route path='/' element={<Home />} />
-     <Route path='/about' element={<About />} />
-     <Route path='/app-design' element={<AppDesign />} />
-     <Route path='/contact' element={<Contact />} />
-     <Route path='/graphic-design' element={<GraphicDesign />} />
-     <Route path='/location' element={<Locations />} />
-     <Route path='/web-design' element={<WebDesign />} />
+     <Route path='/designo-multi-page-website-react' element={<Home />} />
+     <Route path='/designo-multi-page-website-react/about' element={<About />} />
+     <Route path='/designo-multi-page-website-react/app-design' element={<AppDesign />} />
+     <Route path='/designo-multi-page-website-react/contact' element={<Contact />} />
+     <Route path='/designo-multi-page-website-react/graphic-design' element={<GraphicDesign />} />
+     <Route path='/designo-multi-page-website-react/location' element={<Locations />} />
+     <Route path='/designo-multi-page-website-react/web-design' element={<WebDesign />} />
        
     </Routes>
   </BrowserRouter>

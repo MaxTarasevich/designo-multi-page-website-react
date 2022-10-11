@@ -54,7 +54,7 @@ const projectsData = [
 
   {
     title:'APP DESIGN',
-    link:'/app-design',
+    link:'/designo-multi-page-website-react/app-design',
     img:{
       desktop:`${images.appDes}`,
       tablet:`${imagesTablet.appDes}`,
@@ -64,7 +64,7 @@ const projectsData = [
   },
   {
     title:'GRAPHIC DESIGN',
-    link:'/graphic-design',
+    link:'/designo-multi-page-website-react/graphic-design',
     img:{
       desktop:`${images.graphicDes}`,
       tablet:`${imagesTablet.graphicDes}`,

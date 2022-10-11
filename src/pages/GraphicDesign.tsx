@@ -39,7 +39,7 @@ const AppProjectsData = [
   
   {
     title:'WEB DESIGN',
-    link:'/web-design',
+    link:'/designo-multi-page-website-react/web-design',
     img:{
       desktop:`${images.webDesSmall}`,
       tablet:`${imagesTablet.webDes}`,
@@ -49,7 +49,7 @@ const AppProjectsData = [
   },
   {
     title:'APP DESIGN',
-    link:'/app-design',
+    link:'/designo-multi-page-website-react/app-design',
     img:{
       desktop:`${images.appDes}`,
       tablet:`${imagesTablet.appDes}`,
