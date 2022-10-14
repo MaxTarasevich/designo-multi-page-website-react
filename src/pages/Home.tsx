@@ -13,7 +13,7 @@ import imagesMobile from '../constants/imagesMobile'
 const projectsData = [
   {
     title:'WEB DESIGN',
-    link:'/web-design',
+    link:'/designo-multi-page-website-react/web-design',
     img:{
       desktop:images.webDesLarge,
       tablet:imagesTablet.webDes,

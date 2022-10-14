@@ -20,7 +20,7 @@ const Nav: React.FC<Props>= ({dark, header}) => {
 
        <Wrapper>
 
-        <NavLink to={'/'}>
+        <NavLink to={'/designo-multi-page-website-react/'}>
           <div className="nav__logo">
             <img src={dark ? images.logoLight : images.logoDark} alt="company logo" />
           </div>
