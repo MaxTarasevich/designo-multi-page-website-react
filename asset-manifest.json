@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/designo-multi-page-website-react/static/css/main.ea9c9c62.css",
-    "main.js": "/designo-multi-page-website-react/static/js/main.a02bb4b7.js",
+    "main.css": "/designo-multi-page-website-react/static/css/main.e64d0130.css",
+    "main.js": "/designo-multi-page-website-react/static/js/main.c4199e0e.js",
     "static/media/image-hero-home-tablet.png": "/designo-multi-page-website-react/static/media/image-hero-home-tablet.216b681463f2d1d0c1b5.png",
     "static/media/image-change.jpg": "/designo-multi-page-website-react/static/media/image-change.3051c97c1dcc2c751755.jpg",
     "static/media/image-boxed-water.jpg": "/designo-multi-page-website-react/static/media/image-boxed-water.9348f4ace8db6ac37e27.jpg",
@@ -44,11 +44,11 @@
     "static/media/bg-pattern-hero-about-desktop.svg": "/designo-multi-page-website-react/static/media/bg-pattern-hero-about-desktop.3239891f08543f63d766.svg",
     "static/media/bg-pattern-small-circle.svg": "/designo-multi-page-website-react/static/media/bg-pattern-small-circle.6998c69d139ac33cf6f7.svg",
     "static/media/bg-pattern-leaf.svg": "/designo-multi-page-website-react/static/media/bg-pattern-leaf.b8760898792e089a753a.svg",
-    "main.ea9c9c62.css.map": "/designo-multi-page-website-react/static/css/main.ea9c9c62.css.map",
-    "main.a02bb4b7.js.map": "/designo-multi-page-website-react/static/js/main.a02bb4b7.js.map"
+    "main.e64d0130.css.map": "/designo-multi-page-website-react/static/css/main.e64d0130.css.map",
+    "main.c4199e0e.js.map": "/designo-multi-page-website-react/static/js/main.c4199e0e.js.map"
   },
   "entrypoints": [
-    "static/css/main.ea9c9c62.css",
-    "static/js/main.a02bb4b7.js"
+    "static/css/main.e64d0130.css",
+    "static/js/main.c4199e0e.js"
   ]
 }
