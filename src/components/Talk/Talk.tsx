@@ -20,7 +20,7 @@ const Talk = () => {
               </p>
           </div>
 
-          <Button text={'Get in touch'} dark={false} link={'/contact'}/>
+          <Button text={'Get in touch'} dark={false} link={'/designo-multi-page-website-react/contact'}/>
         </Wrapper>
     </section>
   )

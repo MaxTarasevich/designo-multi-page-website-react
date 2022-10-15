@@ -16,10 +16,9 @@ const Button: React.FC<Props> = ({text,dark,link}) => {
    <>
    {
     link 
-    ? <Link to={link}>
-        <button className={`btn ${dark ? 'btn-dark' : ''}`}>
+    ? <Link to={link} className={`btn ${dark ? 'btn-dark' : ''}`}>
           {text}
-        </button>
+        
       </Link>
     : <button className={`btn ${dark ? 'btn-dark' : ''}`}>
         {text}

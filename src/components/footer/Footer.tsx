@@ -31,19 +31,19 @@ const Footer:React.FC<Props> = ({className}) => {
 
                 <ul className="footer__social">
                     <li>
-                        <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"><IconFacebook /></a>
+                        <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">Facebook<IconFacebook /></a>
                     </li>
                     <li>
-                        <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer"><IconYoutube /></a>
+                        <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">YouTube<IconYoutube /></a>
                     </li>
                     <li>
-                        <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer"><IconTwitter /></a>
+                        <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer">Twitter<IconTwitter /></a>
                     </li>
                     <li>
-                        <a href="https://www.pinterest.com/" target="_blank" rel="noopener noreferrer"><IconPinterest /></a>
+                        <a href="https://www.pinterest.com/" target="_blank" rel="noopener noreferrer">Pinterest<IconPinterest /></a>
                     </li>
                     <li>
-                        <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"><IconInstagram /></a>
+                        <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram<IconInstagram /></a>
                     </li>
                 </ul>
             </div>
